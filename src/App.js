@@ -3,8 +3,9 @@ import Profile from './profile/Profile'
 
  function App() {
 
-const alert=()=>{
-  alert ('hi im alert')
+
+const handelAlert=(x)=>{
+  alert(`hi im ${x}`)
 }
 
 
@@ -17,13 +18,14 @@ const alert=()=>{
  <Profile
         fullname ='omar laater'
         bio='gomycode '
-        profession='jobless'>
+        profession='jobless'
+        handelAlert={handelAlert}
+        >
        
         <img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__340.jpg" alt='my photo' 
-        />
+        style={{}} />
     
         </Profile> 
-      
     
       </div>
      );

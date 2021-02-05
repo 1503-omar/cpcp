@@ -1,10 +1,11 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-const Profile = ({ fullname, bio, profession, children,alert }) => {
 
+const Profile = ({ fullname, bio, profession, children, handelAlert }) => {
 
   return ( 
    <div  >
+      <button onClick={()=>handelAlert(fullname)}>click to show alert</button>
       <p> fullname :{fullname} </p>
       <p>bio :{bio} </p>
       <p>profession :{profession} </p>
